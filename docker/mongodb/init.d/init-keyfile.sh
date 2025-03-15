@@ -24,11 +24,4 @@ else
   echo "Permissions verified."
 fi
 
-# FIXME
-i=0
-for i in {1..30} ; do
-  sleep 1
-  echo "Waiting in docker-entrypoint-wrapped.sh"
-done
-
 echo "Keyfile setup completed."

@@ -1,15 +1,6 @@
 #!/bin/bash
 set -e
 
-
-# FIXME.
-i=0
-for i in {1..30} ; do
-  sleep 1
-  echo "Waiting in docker-entrypoint-wrapped.sh"
-done
-
-
 # this script wraps the original docker-entrypoint.sh script of mongodb
 # 1. mongodb entrypoint script is called, invoking init.d scripts before starting the server
 # 2. the server is started and the entrypoint script waits for the server to be ready
