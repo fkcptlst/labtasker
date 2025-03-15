@@ -24,4 +24,13 @@ else
   echo "Permissions verified."
 fi
 
+# FIXME.
+i=0
+for i in {1..60} ; do
+  if [ -f "$KEYFILE_PATH" ]; then
+    sleep 1
+    echo "Waiting in init-keyfile"
+  fi
+done
+
 echo "Keyfile setup completed."
