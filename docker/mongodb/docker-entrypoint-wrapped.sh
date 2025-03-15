@@ -5,10 +5,8 @@ set -e
 # FIXME.
 i=0
 for i in {1..30} ; do
-  if [ -f "$KEYFILE_PATH" ]; then
-    sleep 1
-    echo "Waiting in docker-entrypoint-wrapped.sh"
-  fi
+  sleep 1
+  echo "Waiting in docker-entrypoint-wrapped.sh"
 done
 
 
